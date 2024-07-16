@@ -6,6 +6,13 @@ body{
     background-color: #131720;
     font-family: sans-serif;
 }
+span{
+    /* padding-top: 15px; */
+    color: #fff;
+    font-size: smaller;
+    margin: auto;
+    
+}
 
 h3 {
     color: white;
@@ -51,12 +58,7 @@ input{
     padding: 6px 9px;
 }
 
-.thumbnail{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-}
+
 
 .column {
     float: left;
@@ -65,9 +67,26 @@ input{
    
 }
 
-.card{
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 19px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     background-color: #151f30;
-}
+    /* Set a fixed width for consistent card size */
+    width: 215px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+  }
+  
+  .thumbnail {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 50%; /* Prevent image overflow */
+  }
+  
